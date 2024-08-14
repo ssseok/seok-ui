@@ -42,7 +42,6 @@ export default {
             GmarketSansBold: ['GmarketSansBold'],
             GmarketSansMedium: ['GmarketSansMedium'],
             GmarketSansLight: ['GmarketSansLight'],
-            body: ['GmarketSansMedium'],
         },
         colors: {
             primary: ' #1d2745',
