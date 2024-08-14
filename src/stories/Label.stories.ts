@@ -10,7 +10,7 @@ const meta = {
     tags: ['autodocs'],
     argTypes: {
         htmlFor: { control: 'text', description: 'label의 for 속성' },
-        children: { control: 'text', description: 'label의 for 속성' },
+        children: { control: 'text', description: 'label의 내용' },
     },
 } satisfies Meta<typeof Label>;
 
