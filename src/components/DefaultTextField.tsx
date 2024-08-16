@@ -24,7 +24,11 @@ export default function DefaultTextField({
     isError,
 }: IDefaultTextField) {
     const [isFocused, setIsFocused] = useState<boolean>(false);
-    const borderColor = isFocused ? "border-secondary" :  !value? 'border-tree300' : 'border-primary';
+    const borderColor = isFocused
+        ? 'border-tree'
+        : !value
+          ? 'border-mono300'
+          : 'border-primary';
     return (
         <div
             onFocus={() => setIsFocused(true)}
@@ -36,6 +40,7 @@ export default function DefaultTextField({
               `}
         >
             <input
+                className="outline-none"
                 type="text"
                 onChange={onChange}
                 placeholder={placeholder}
