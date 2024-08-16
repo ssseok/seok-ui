@@ -7,6 +7,7 @@ interface IIconButtonProps {
 export default function IconButton({
     iconPath,
     onClick,
+
     alt,
 }: IIconButtonProps) {
     return (
