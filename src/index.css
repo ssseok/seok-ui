@@ -26,3 +26,9 @@
 :root {
     @apply font-GmarketSansMedium;
 }
+
+@layer components {
+    .text-filed > p {
+        @apply absolute;
+    }
+}

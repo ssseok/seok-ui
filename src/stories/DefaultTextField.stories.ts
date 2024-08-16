@@ -25,6 +25,7 @@ const meta = {
             action: 'changed',
             description: '텍스트 필드 값 변경 이벤트',
         },
+        id: { control: 'text', description: '텍스트 필드의 id' },
     },
     args: {
         onIconClick: fn(),
@@ -43,5 +44,6 @@ export const Default: Story = {
         placeholder: '텍스트를 입력해주세요.',
         value: '',
         isError: false,
+        id: ' ',
     },
 };

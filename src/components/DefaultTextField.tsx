@@ -11,6 +11,7 @@ interface IDefaultTextField {
     value: string;
     placeholder: string;
     isError: boolean;
+    id: string;
 }
 
 export default function DefaultTextField({
@@ -22,6 +23,7 @@ export default function DefaultTextField({
     placeholder,
     value,
     isError,
+    id,
 }: IDefaultTextField) {
     const [isFocused, setIsFocused] = useState<boolean>(false);
     const borderColor = isFocused
@@ -30,30 +32,33 @@ export default function DefaultTextField({
           ? 'border-mono300'
           : 'border-primary';
     return (
-        <div
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
-            className={`
+        <div className="text-filed">
+            <div
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setIsFocused(false)}
+                className={`
               text-primary
               border-b
               ${borderColor}
               `}
-        >
-            <input
-                className="outline-none"
-                type="text"
-                onChange={onChange}
-                placeholder={placeholder}
-                value={value}
-            />
-            {!!value && (
-                <IconButton
-                    onClick={onIconClick}
-                    alt={IconAlt}
-                    iconPath={iconPath}
+            >
+                <input
+                    id={id}
+                    className="outline-none w-full"
+                    type="text"
+                    onChange={onChange}
+                    placeholder={placeholder}
+                    value={value}
                 />
-            )}
 
+                {!!value && (
+                    <IconButton
+                        onClick={onIconClick}
+                        alt={IconAlt}
+                        iconPath={iconPath}
+                    />
+                )}
+            </div>
             {isError && <ErrorMessge>{errorMessge}</ErrorMessge>}
         </div>
     );
