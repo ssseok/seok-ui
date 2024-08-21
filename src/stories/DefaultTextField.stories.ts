@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import DefaultTextField from '../components/DefaultTextField';
-import Clear from '../assets/icons/Clear.svg';
+import Close from '../assets/icon/svgs/Close.svg';
 
 const meta = {
     title: 'TextFields/DefaultTextField',
@@ -39,7 +39,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         IconAlt: 'icon',
-        iconPath: Clear,
+        iconPath: Close,
         errorMessge: '텍스트를 확인해주세요.',
         placeholder: '텍스트를 입력해주세요.',
         value: '',

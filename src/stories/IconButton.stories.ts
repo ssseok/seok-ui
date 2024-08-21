@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import IconButton from '../components/IconButton';
-import Clear from '../assets/icons/Clear.svg';
+import Close from '../assets/icon/svgs/Close.svg';
 
 const meta = {
     title: 'Buttons/IconButton',
@@ -26,6 +26,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         alt: 'icon',
-        iconPath: Clear,
+        iconPath: Close,
     },
 };
