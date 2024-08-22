@@ -1,8 +1,8 @@
+import ErrorMessge from '../errorMessge/ErrorMessge';
 import { useState } from 'react';
-import ErrorMessge from './ErrorMessge';
-import IconButton from './IconButton';
+import IconButton from '../iconButton/IconButton';
 
-interface IDefaultTextField {
+interface ItextField {
     errorMessge: string;
     iconPath: string;
     onIconClick: React.MouseEventHandler<HTMLButtonElement>;
@@ -14,7 +14,7 @@ interface IDefaultTextField {
     id: string;
 }
 
-export default function DefaultTextField({
+export default function TextField({
     IconAlt,
     errorMessge,
     iconPath,
@@ -24,7 +24,7 @@ export default function DefaultTextField({
     value,
     isError,
     id,
-}: IDefaultTextField) {
+}: ItextField) {
     const [isFocused, setIsFocused] = useState<boolean>(false);
     const borderColor = isFocused
         ? 'border-primary'

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import NavigationBar from '../components/NavigationBar';
+import NavigationBar from './NavigationBar';
 
 const meta = {
     title: 'Navigation/NavigationBar',

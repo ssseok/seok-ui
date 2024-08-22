@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import DefaultTextField from '../components/DefaultTextField';
-import Close from '../assets/icon/svgs/Close.svg';
+import Close from '../../assets/icon/svgs/Close.svg';
+import textField from './TextField';
 
 const meta = {
-    title: 'TextFields/DefaultTextField',
-    component: DefaultTextField,
+    title: 'textFields/textField',
+    component: textField,
     parameters: {
         layout: 'centered',
     },
@@ -31,7 +31,7 @@ const meta = {
         onIconClick: fn(),
         onChange: fn(),
     },
-} satisfies Meta<typeof DefaultTextField>;
+} satisfies Meta<typeof textField>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

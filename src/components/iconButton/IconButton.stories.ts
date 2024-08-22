@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import IconButton from '../components/IconButton';
-import Close from '../assets/icon/svgs/Close.svg';
+import IconButton from './IconButton';
+import Close from '../../assets/icon/svgs/Close.svg';
 
 const meta = {
     title: 'Buttons/IconButton',

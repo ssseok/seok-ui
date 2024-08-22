@@ -1,6 +1,6 @@
-import IconButton from './IconButton';
-import Close from '../assets/icon/svgs/Close.svg';
-import ArrowLeft from '../assets/icon/svgs/ArrowLeft.svg';
+import Close from '../../assets/icon/svgs/Close.svg';
+import ArrowLeft from '../../assets/icon/svgs/ArrowLeft.svg';
+import IconButton from '../iconButton/IconButton';
 
 interface INavigationBar {
     isDark?: boolean;
