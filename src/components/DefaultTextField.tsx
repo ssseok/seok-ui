@@ -27,7 +27,7 @@ export default function DefaultTextField({
 }: IDefaultTextField) {
     const [isFocused, setIsFocused] = useState<boolean>(false);
     const borderColor = isFocused
-        ? 'border-tree'
+        ? 'border-primary'
         : !value
           ? 'border-mono300'
           : 'border-primary';

@@ -3,6 +3,9 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {},
+        borderRadius: {
+            'primary-button': '5px',
+        },
         fontSize: {
             xs: [
                 '12px',
@@ -45,14 +48,13 @@ export default {
             body: ['GmarketSansMedium'],
         },
         colors: {
-            primary: ' #1D2745',
-            tree: ' #1DCD8B',
-            tertiary: ' #F52C50',
+            primary: ' #1DCD8B',
             white: ' #FFFFFF',
             mono100: ' #F1F1F1',
             mono200: ' #BEBEBE',
             mono300: ' #D6D7D9',
             error: ' #D01E1E',
+            link: '#2592FF',
         },
     },
     plugins: [],
